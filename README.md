@@ -2,6 +2,12 @@
 
 Laravel 8, PHP 7.4
 
+## Database Preview
+
+![sqlite laravel sample project database preview](sqlite-preview.png)
+
+![sqlite laravel sample project database preview](database-post-table-preview.png)
+
 ## Routes
 
 ```
