@@ -4,7 +4,15 @@ Laravel 8, PHP 7.4
 
 After clone -> Command Line :
 
-**Get all posts:** `GET /api/posts`
+<<<<<<< HEAD
+
+1. run composer install to generate depedencies in vendor folder
+2. change .env.example to .env
+3. run php artisan key:generate
+4. configure .env
+5. php artisan migrate:fresh --seed
+6. # php artisan serve
+   **Get all posts:** `GET /api/posts`
 
 **Get a single post:** `GET /api/posts/{id}`
 
@@ -74,6 +82,10 @@ Psy Shell v0.10.7 (PHP 8.0.3 — cli) by Justin Hileman
 
 ## Acknowledgment
 
+<!-- https://www.youtube.com/watch?v=WDha52dbLWM -->
+
 I saw an Youtube video and It's encouraged me to write a similar project myself.
 
 © Copyright Max Base 2021
+
+> > > > > > > 64c6d35 (add link)
