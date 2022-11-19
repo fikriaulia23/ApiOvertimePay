@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\PostsApiController;
-use App\Modeles\Post;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\SettingController;
+use App\Http\Controllers\OvertimeController;
+use App\Http\Controllers\OvertimepayController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,16 +18,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
-// Route::get('/posts', function() {
-// 	return Post::all();
-// });
-
-Route::get('/posts', [PostsApiController::class, 'index']);
-Route::get('/posts/{post}', [PostsApiController::class, 'get']);
-Route::post('/posts', [PostsApiController::class, 'store']);
-Route::put('/posts/{post}', [PostsApiController::class, 'update']);
-Route::delete('/posts/{post}', [PostsApiController::class, 'destroy']);
+Route::get('overtime-pays/calculate', [OvertimepayController::class, 'calculate']);
+Route::post('overtimes', [OvertimeController::class, 'store']);
+Route::patch('settings', [SettingController::class, 'patch']);
+Route::post('employee/store', [EmployeeController::class, 'store']);
+Route::get('employee', [EmployeeController::class, 'index']);
